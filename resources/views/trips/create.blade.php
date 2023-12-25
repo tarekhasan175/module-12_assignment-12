@@ -1,5 +1,3 @@
-<!-- trips/create.blade.php -->
-
 @extends('layouts.app')
 
 @section('title', 'Create Trip')
@@ -7,14 +5,12 @@
 @section('content')
     <h2>Create a New Trip</h2>
 
-    {{-- Display success message if any --}}
     @if (session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
         </div>
     @endif
 
-    {{-- Display validation errors if any --}}
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -25,7 +21,6 @@
         </div>
     @endif
 
-    {{-- Form to create a new trip --}}
     <form action="{{ route('trips.store') }}" method="post">
         @csrf
 

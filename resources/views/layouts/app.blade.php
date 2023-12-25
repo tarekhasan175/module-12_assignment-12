@@ -18,7 +18,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"> <!-- Use ms-auto to push content to the right -->
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/trips">Trips</a>
                     </li>
@@ -40,9 +40,7 @@
         @yield('content')
     </div>
 
-    <!-- Include Bootstrap JS and other scripts if needed -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Additional scripts can be added here -->
 </body>
 
 </html>

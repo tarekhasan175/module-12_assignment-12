@@ -33,7 +33,7 @@ class SeatController extends Controller
             SeatAllocation::create([
                 'trip_id' => $validatedData['trip_id'],
                 'seat_number' => $validatedData['seat_number'],
-                'user_id' => auth()->id(), // Assuming you're using authentication
+                'user_id' => auth()->id(),
             ]);
 
             return redirect('/')->with('success', 'Seat reserved successfully!');
